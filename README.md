@@ -6,14 +6,14 @@ Installation, get Familiar with your IDE, OF application structure, c++ basic op
 Make your first OF application, Make a login in the OF forum.
 
 
-Keywords: `mousex`, `ofDrawCircle`, `ofColor`
+Keywords: `mousex`, `ofDrawCircle`, `ofColor`, `ofDrawLine`, `ofPushStyle`
 
 
 # Colors
 
 Description: Learn how to create colors and and how to change them.
 
-Keywords: `ofColor`, `ofFloatColor::red`, `ofBackground`, `ofPushStyle`, `ofPopStyle`, `ofEnableBlendMode(OF_BLENDMODE_ADD);`
+Keywords: `ofColor`, `ofFloatColor::red`, `ofBackground`, `ofPushStyle`, `ofPopStyle`, `ofEnableBlendMode(OF_BLENDMODE_ADD)`, `HSB`, `RGB`
 
 ### Exercise(s)
 
@@ -23,6 +23,27 @@ Create your own palette, invent your own animation.
 [The Interaction of Colors](https://www.goodreads.com/book/show/111113.Interaction_of_Color) by Joseph Albers.
 
 Colors suggestion by [Manoloide](https://www.patreon.com/posts/colors-colors-18611429)
+
+
+### Logical operators, comparison operator, loop and conditions
+
+Description: Learn how to compare two variables, how to make a branch condition, how to make a loop.
+
+Keywords: `||`, `&&`, `>`, `<`, `>=`. 
+
+Exercises:
+
+- Make a sketch where the value of a variable is changing continuosly and you compare this value with a fixed variable. Use comparison operator or logical operator to change the visual output of your sketch.
+
+Applications: `logicalOperators`, `comparisonOperators`, `sine-waves-loop`
+
+### Matrices
+
+Description: Learn how to move and rotate your forms
+
+Keywords: `ofRotate, ofTranslate, ofPushMatrix, ofPopMatrix`
+
+Application: `introToMatrices`
 
 
 # Unit cirlce, sine wave
