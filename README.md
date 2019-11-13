@@ -249,6 +249,34 @@ logical operators
 !
 ```
 
+- Working with the console.
+
+You do not require xcode or visual studio 2017 to run opeframeworks. A terminal and a text editor are enough. As a text editor I suggest [visual studio code](https://code.visualstudio.com/download).
+
+The navigation commands that you need to move around using the terminal are:
+
+- `pwd`. It means "print working directory" and it simply print on screen the path on which you are at the moment.
+- `ls`. It means "list", it lists all the files and directory in the folder where you currently are.
+- `cd`. It means "change directory", and it is the equivalent of double clicking on a folder.
+
+The commands that you need to compile openframeworks are:
+- `make`. It compiles the app.
+- `make run`. It runs the up.
+- You can run them together using `make && make run`
+
+A practical example. Let's say that you want to run the application call "myHomework" in the "MyApps" folder in openframewors.
+
+Launch the terminal an write `pwd`. The terminal will reply you something like `Users/myUser`. if you print `ls`, you will see all the folder that you have in your home. Let's assume that you have openframeWorks in your `Documents` folder.
+
+If you write `cd Documents`, you will enter the Documents folder. If, from there, you write `cd openFrameworks/apps/myApps` you will enter the `myApps` folder.
+
+In this folder there are all your sketches, included `myHomeworks`. cd into that directory, typing `cd myHomeworks`.
+
+Now you are inside an openFrameworks application. The `make` command will compile it and `make run` will run it. If it is the first time that you run openFrameworks, it may take a while.
+
+
+
+
 
 
 
