@@ -249,7 +249,7 @@ logical operators
 !
 ```
 
-- Working with the console.
+### Working with the console.
 
 You do not require xcode or visual studio 2017 to run opeframeworks. A terminal and a text editor are enough. As a text editor I suggest [visual studio code](https://code.visualstudio.com/download).
 
