@@ -1,4 +1,4 @@
-# Intro to OF
+## Intro to OF
 
 Description:
 Installation, get Familiar with your IDE, OF application structure, c++ basic operators.
@@ -9,7 +9,7 @@ Make your first OF application, Make a login in the OF forum.
 Keywords: `mousex`, `ofDrawCircle`, `ofColor`, `ofDrawLine`, `ofPushStyle`
 
 
-# Colors
+## Colors
 
 Description: Learn how to create colors and and how to change them.
 
@@ -25,7 +25,7 @@ Create your own palette, invent your own animation.
 Colors suggestion by [Manoloide](https://www.patreon.com/posts/colors-colors-18611429)
 
 
-### Logical operators, comparison operator, loop and conditions
+## Logical operators, comparison operator, loop and conditions
 
 Description: Learn how to compare two variables, how to make a branch condition, how to make a loop.
 
@@ -37,16 +37,25 @@ Exercises:
 
 Applications: `logicalOperators`, `comparisonOperators`, `sine-waves-loop`
 
-### Matrices
+## Matrices
 
 Description: Learn how to move and rotate your forms
 
-Keywords: `ofRotate, ofTranslate, ofPushMatrix, ofPopMatrix`
+Keywords:
+
+```cpp
+ofPushMatrix()
+ofPopMatrix()
+ofTranslate()
+ofScale()
+ofRotateDeg()
+ofRotateRad()
+```
 
 Application: `introToMatrices`
 
 
-# Unit cirlce, sine wave
+## Unit cirlce, sine wave
 
 Description:
 
@@ -61,7 +70,7 @@ Homeworks:
 - Write all the the error messages that you are receiving while developing. Keep a collection of your errors, learn to debug your code.
 
 
-# Modulo operator and loops
+## Modulo operator and loops
 
 Description: get confident with modulo and loop.
 
@@ -75,22 +84,13 @@ Make 3 applications that have a GUI.
 
 - Make an application that uses 3 different sine waves with different amplitude and frequency.
 
-# Matrix transformations
 
-```cpp
-ofPushMatrix()
-ofPopMatrix()
-ofTranslate()
-ofScale()
-ofRotateDeg()
-```
-
-# Noise and Random
+## Noise and Random
 
 Keywords: `ofSeed`,`ofRandom`, `ofNoise`
 
 
-# Polar coordinates, path, lines, shapes.
+## Polar coordinates, path, lines, shapes.
 
 Description:
 Move from polar coordinates to cartesian coordinates and viceversa. Go back to the unit circle and do the math.
@@ -98,7 +98,7 @@ Create your own shapes changing the algorithm that we have used to draw the circ
 
 Keywords: `ofPath`, shapes.
 
-# Vectors
+## Vectors
 
 Description: move things around using vectors.
 
@@ -107,7 +107,7 @@ Keywords: `glm::vec2`
 Reference: [Nature of Code](https://natureofcode.com/book/chapter-1-vectors/). It is in processing but the concepts are valid in OF as well.
 
 
-# Containers
+## Containers
 
 Vectors
 
@@ -128,13 +128,13 @@ Read the two references regarding `std::maps` and `std::vectors`.
 
 [std::vectors](https://openframeworks.cc/ofBook/chapters/stl_vector.html) documentation
 
-# Images
+## Images
 
 Description: How to manipulate pixels one by one and save the result in an image.
 
 Keywords: `ofImage`, `ofPixels`, `getColor`, `setColor`
 
-# Typography
+## Typography
 
 Bitmap
 Keywords: `ofDrawBitmapString()`, `ofDrawBitmapStringHighlight()`, `ofTrueTypeFont font;` , `font.load()`, `font.drawString()`
@@ -142,7 +142,7 @@ Keywords: `ofDrawBitmapString()`, `ofDrawBitmapStringHighlight()`, `ofTrueTypeFo
 
 See app `fonts`
 
-# ofNode
+## ofNode
 
 Description: introducing ofNode, How to combine several ofNode instances together.
 
@@ -150,23 +150,23 @@ Keywords: `ofNode`, `panDeg`, `ofPolyline`
 
 [ofNode Documentation](https://openframeworks.cc/documentation/3d/ofNode/)
 
-# Meshes
+## Meshes
 
 Keywords: ofNode, ofEasyCam, ofMaterial, ofLight, 3D coordinate system, normal, surfaces.
 
 Resources:
 [intro to meshes](https://openframeworks.cc/ofBook/chapters/generativemesh.html)
 
-# Meshes and camera
+## Meshes and camera
 Keywords: addVertex, generative meshes, how to rotate a point.
 
-# Arduino
+## Arduino
 
 Description: Build an image distorsion tool using arduino.
 
 Keywords: `ofSerial`
 
-# OSC
+## OSC
 
 Description: Make music letting your OF application talk to Sonic PI.
 
