@@ -61,11 +61,6 @@ Homeworks:
 - Write all the the error messages that you are receiving while developing. Keep a collection of your errors, learn to debug your code.
 
 
-# Noise and Random
-
-Keywords: `ofSeed`,`ofRandom`, `ofNoise`
-
-
 # Modulo operator and loops
 
 Description: get confident with modulo and loop.
@@ -89,6 +84,10 @@ ofTranslate()
 ofScale()
 ofRotateDeg()
 ```
+
+# Noise and Random
+
+Keywords: `ofSeed`,`ofRandom`, `ofNoise`
 
 
 # Polar coordinates, path, lines, shapes.
