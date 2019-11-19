@@ -3,10 +3,11 @@
 Description:
 Installation, get Familiar with your IDE, OF application structure, c++ basic operators.
 
-Make your first OF application, Make a login in the OF forum.
-
+Make your first OF application, create a login in the OF forum.
 
 Keywords: `mousex`, `ofDrawCircle`, `ofColor`, `ofDrawLine`, `ofPushStyle`
+
+Application: `first`, `animationSimple`
 
 
 ## Colors
@@ -15,9 +16,13 @@ Description: Learn how to create colors and and how to change them.
 
 Keywords: `ofColor`, `ofFloatColor::red`, `ofBackground`, `ofPushStyle`, `ofPopStyle`, `ofEnableBlendMode(OF_BLENDMODE_ADD)`, `HSB`, `RGB`
 
-### Exercise(s)
+Application: `colors`
 
-Create your own palette, invent your own animation.
+### Exercise(s)
+- Create your own palette, invent your own animation.
+
+Notes for the theacher: 
+- Exercises "Color" at page 88 of "Code as Creative Medium"
 
 ### References
 [The Interaction of Colors](https://www.goodreads.com/book/show/111113.Interaction_of_Color) by Joseph Albers.
@@ -34,6 +39,10 @@ Keywords: `||`, `&&`, `>`, `<`, `>=`.
 Exercises:
 
 - Make a sketch where the value of a variable is changing continuosly and you compare this value with a fixed variable. Use comparison operator or logical operator to change the visual output of your sketch.
+- Make an application and draw a square. Change the background color when the mouse is over the square.
+
+Notes for the teacher:
+- Exercises "Conditional testing" at pag. 90 of "Code as Creative Medium"
 
 Applications: `logicalOperators`, `comparisonOperators`, `sine-waves-loop`
 
@@ -54,12 +63,30 @@ ofRotateRad()
 
 Application: `introToMatrices`
 
+Exercise: Re-code "Schotter", by Georg Ness, 1965.
+
+## Modulo operator and loops
+
+Description: get confident with the modulo operator and loop.
+
+Keywords: `%`, `for`, `while`
+
+Exercises:
+
+- Make a grid where the color of the cells depends on some calculation that involves the modulo operator.
+
+- Make an application that uses 3 different sine waves with different amplitude and frequency.
+
+Notes for the teacher:
+- Exercises "Iteration", pag 86 of "Code as creative Medium"
+
 
 ## Unit cirlce, sine wave
 
 Description:
 
-Get familiar with the unit circle. Intro to the unit circle, intro to sine waves
+- Understandin sin of time, plotting the sin(time) on the x axis.
+- Understanding the unit circle [gif](https://commons.wikimedia.org/wiki/File:Circle_cos_sin.gif).
 
 Keywords:
 
@@ -70,42 +97,25 @@ Homeworks:
 - Write all the the error messages that you are receiving while developing. Keep a collection of your errors, learn to debug your code.
 
 
-## Modulo operator and loops
-
-Description: get confident with modulo and loop.
-
-Keywords: `%`, `for`, `while`
-
-Exercises:
-
-Make 3 applications that have a GUI.
-
-- Make an application that uses the modulo operator and `ofPath`.
-
-- Make an application that uses 3 different sine waves with different amplitude and frequency.
-
-
 ## Noise and Random
 
+Description: What is Randomness and what is noise, and how those are generated in the computer. Kevin Perlin and the Perlin noise in Tron.
+
 Keywords: `ofSeed`,`ofRandom`, `ofNoise`
+
+Notes for the teacher:
+Exercises "Unpredictability" pag. 106 of "Code as Creative Medium".
 
 
 ## Polar coordinates, path, lines, shapes.
 
 Description:
-Move from polar coordinates to cartesian coordinates and viceversa. Go back to the unit circle and do the math.
-Create your own shapes changing the algorithm that we have used to draw the circles
+Move from polar coordinates to cartesian coordinates and viceversa. Have a look to the previous exercise about the unit circle.
+
+### Exercises
+- Create your own shapes changing the algorithm that we have used to draw the circles
 
 Keywords: `ofPath`, shapes.
-
-## Vectors
-
-Description: move things around using vectors.
-
-Keywords: `glm::vec2`
-
-Reference: [Nature of Code](https://natureofcode.com/book/chapter-1-vectors/). It is in processing but the concepts are valid in OF as well.
-
 
 ## Containers
 
@@ -122,7 +132,10 @@ See app: `containers_polyline`
 
 ### Exercise(s)
 
-Read the two references regarding `std::maps` and `std::vectors`.
+- Read the two references regarding `std::maps` and `std::vectors`.
+
+Notes for the teacher:
+- Exercises "Arrays" at pag. 91 of "Code as Creative Medium".
 
 ### References
 
@@ -134,6 +147,17 @@ Description: How to manipulate pixels one by one and save the result in an image
 
 Keywords: `ofImage`, `ofPixels`, `getColor`, `setColor`
 
+Notes for the teacher:
+- Exercises "Image" at pag. 101 of "Code as Creative Medium".
+
+## Vectors
+
+Description: move things around using vectors.
+
+Keywords: `glm::vec2`
+
+Reference: [Nature of Code](https://natureofcode.com/book/chapter-1-vectors/). It is in processing but the concepts are valid in OF as well.
+
 ## Typography
 
 Bitmap
@@ -141,6 +165,9 @@ Keywords: `ofDrawBitmapString()`, `ofDrawBitmapStringHighlight()`, `ofTrueTypeFo
 
 
 See app `fonts`
+
+Notes for the teacher:
+- Exercises "Typography" at pag. 105 of "Code as Creative Medium".
 
 ## ofNode
 
@@ -273,6 +300,9 @@ If you write `cd Documents`, you will enter the Documents folder. If, from there
 In this folder there are all your sketches, included `myHomeworks`. cd into that directory, typing `cd myHomeworks`.
 
 Now you are inside an openFrameworks application. The `make` command will compile it and `make run` will run it. If it is the first time that you run openFrameworks, it may take a while.
+
+### Credits
+Some of the exercises in this repository come from [Zach Lieberman's repository](https://github.com/SFPC), from the book "Code As Creative Medium", by [Golan Levin](http://www.flong.com/).
 
 
 
