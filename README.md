@@ -87,14 +87,14 @@ Description:
 
 - Understandin sin of time, plotting the sin(time) on the x axis.
 - Understanding the unit circle [gif](https://commons.wikimedia.org/wiki/File:Circle_cos_sin.gif).
+- How to represent a point in cartesia and polar space, how to convert from one space to the other
 
 Keywords:
 
 SOHCAHTOA, sine and cosine waves, `ofGetElapsedTimef()`, `ofMap`.
 
 Homeworks:
-- Make a composition where you use things learned in class.
-- Write all the the error messages that you are receiving while developing. Keep a collection of your errors, learn to debug your code.
+- Make an application that draws a spiral.
 
 
 ## Noise and Random
@@ -107,13 +107,20 @@ Notes for the teacher:
 Exercises "Unpredictability" pag. 106 of "Code as Creative Medium".
 
 
-## Polar coordinates, path, lines, shapes.
+## Path, lines, shapes, curves.
 
-Description:
-Move from polar coordinates to cartesian coordinates and viceversa. Have a look to the previous exercise about the unit circle.
+Description: How to create shapes and lines connecting points.
+
+Application: `shapes-Blob`
+
+Notes for the teacher:
+Exercises "Curves" pag. 93 of "Code as Creative Medium".
+
+
 
 ### Exercises
 - Create your own shapes changing the algorithm that we have used to draw the circles
+- Move from polar coordinates to cartesian coordinates and viceversa. Have a look to the previous exercise about the unit circle.
 
 Keywords: `ofPath`, shapes.
 
