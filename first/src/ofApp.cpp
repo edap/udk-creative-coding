@@ -25,6 +25,7 @@ void ofApp::draw(){
     // explain colors, x&y and coordinate system
     ofSetColor(255, 255, 0);
     ofDrawCircle(mvn, ofGetHeight()/2, 200);
+    ofDrawCircle(
 
 // variation 1
 

@@ -12,12 +12,12 @@ void ofApp::update(){
     radius += 1;
     radius = radius + 1;
 
-    if(radius > ofGetHeight()/2){
+    if (radius > ofGetHeight()/2) {
         radius = 0;
         ofBackground(255);
     }
 
-    if(angle >= TWO_PI){
+    if (angle >= TWO_PI) {
         angle = 0;
     }
 }
