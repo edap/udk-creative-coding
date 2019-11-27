@@ -106,6 +106,8 @@ Keywords: `ofSeed`,`ofRandom`, `ofNoise`
 Notes for the teacher:
 Exercises "Unpredictability" pag. 106 of "Code as Creative Medium".
 
+Applications `noiseExample`, `randomExample`
+
 
 ## Path, lines, shapes, curves.
 
