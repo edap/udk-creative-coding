@@ -108,6 +108,8 @@ Exercises "Unpredictability" pag. 106 of "Code as Creative Medium".
 
 Applications `noiseExample`, `randomExample`
 
+References: [A Million Random Digits](https://en.wikipedia.org/wiki/A_Million_Random_Digits_with_100,000_Normal_Deviates), [History of randomness](https://en.wikipedia.org/wiki/History_of_randomness), [Random Number generators](https://en.wikipedia.org/wiki/Random_number_generation)
+
 
 ## Path, lines, shapes, curves.
 
