@@ -8,26 +8,11 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+        float smoothLastPoints(float offset, float angle, float round);
 
-		void keyPressed(int key);
-		void keyReleased(int key);
-		void mouseMoved(int x, int y );
-		void mouseDragged(int x, int y, int button);
-		void mousePressed(int x, int y, int button);
-		void mouseReleased(int x, int y, int button);
-		void mouseEntered(int x, int y);
-		void mouseExited(int x, int y);
-		void windowResized(int w, int h);
-		void dragEvent(ofDragInfo dragInfo);
-		void gotMessage(ofMessage msg);
-
-    glm::vec2 offset = glm::vec2(ofGetWidth()/2, ofGetHeight()/2);
-    float radius;
-    float angle;
     ofPath line;
-    float yoff;
-    float xoff;
+    float radius = 200;
+    ofVboMesh tesselation;
 
-    ofVboMesh tessellation;
-		
+
 };

@@ -2,113 +2,60 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    radius = 200;
-    ofSetBackgroundColor(ofFloatColor::black);
-    yoff = 0;
+    ofBackground(ofFloatColor::navy);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    line.clear();
-    xoff = 0;
-    // What if you increment the angle by 1.1 instead of 0.1? Why is this happening?
-    for(float angle = 0; angle < TWO_PI; angle+= 0.1 ){
 
-        // A circle
-        // float x = offset.x + radius * cos(angle);
-        // float y = offset.y + radius * sin(angle);
 
-        // intro to random
-        //float newRadius = radius + ofRandom(-5, 5);
-
-        // A classic sin wave
-        // float newRadius = radius + ofMap(sin(angle * 10), -1, 1, -25 , 25);
-        // float newRadius = radius + ofMap(sin(angle * 10 + ofGetFrameNum()*0.1), -1, 1, -25 , 25);
-
-        // intro to noise
-        // first with time
-        //float time = ofGetElapsedTimef();
-        //float newRadius = radius + ofMap(ofNoise(time), 0, 1, -25, 25);
-
-        float newRadius = radius + ofMap(ofNoise(xoff+yoff), 0, 1, -25, 25);
-
-        float x = offset.x + newRadius * cos(angle);
-        float y = offset.y + newRadius * sin(angle);
-        line.lineTo(x,y);
-
-        // Tesselation
-        tessellation = line.getTessellation();
-
-        xoff += 0.15;
-    }
-    yoff += 0.05;
-    line.close();
-    line.setFilled(true);
-    line.setFillColor(ofFloatColor::red);
-    line.setStrokeColor(ofFloatColor::white);
-    line.setStrokeWidth(3.0);
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
+    ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
+    line.clear();
+
+    float time = ofGetElapsedTimef()*0.3;
+    for(float angle = 0; angle <= TWO_PI; angle += 0.02) {
+        float noise = ofNoise(time+(angle*0.3), 0.0f);
+        // not smoothed blob
+        float offset = ofMap(noise, 0 ,1 , -100.0f, 100.0f);
+
+        // smoothed blob
+        // float smoothed_offset = smoothLastPoints(100.0f, angle, TWO_PI);
+        // float offset = ofMap(noise, 0 ,1 , -smoothed_offset, smoothed_offset);
+
+        float x = (radius + offset) * cos(angle);
+        float y = (radius + offset) * sin(angle);
+
+        line.lineTo(x, y);
+    }
+    //tesselation = line.getTessellation();
+    line.setStrokeColor(ofFloatColor::red);
+    //line.setFilled(false);
+    line.setFillColor(ofFloatColor::hotPink);
+    line.setStrokeWidth(3.0);
+    line.close();
     line.draw();
-    ofPushStyle();
-    ofSetColor(ofFloatColor::blue);
-    tessellation.drawWireframe();
-    ofPopStyle();
+
+    line.setStrokeColor(ofFloatColor::lime);
+    tesselation.drawWireframe();
 }
 
-//--------------------------------------------------------------
-void ofApp::keyPressed(int key){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::keyReleased(int key){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
-
+float ofApp::smoothLastPoints(float offset, float angle, float round){
+    float pctToSmooth = 0.2;
+    float smoothStart = round *  pctToSmooth;
+    float smoothEnd = round * (1.0f - pctToSmooth);
+    // smooth last part of the blob
+    if(angle >= smoothEnd){
+        return ofMap(angle,smoothEnd, round, offset, 0.0f);
+    }
+    // smooth second part of the blob
+    else if(angle <= smoothStart){
+        return ofMap(angle, 0.0f, smoothStart, 0.0f, offset);
+    }
+    else{
+        return offset;
+    }
 }

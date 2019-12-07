@@ -110,24 +110,6 @@ Applications `noiseExample`, `randomExample`
 
 References: [A Million Random Digits](https://en.wikipedia.org/wiki/A_Million_Random_Digits_with_100,000_Normal_Deviates), [History of randomness](https://en.wikipedia.org/wiki/History_of_randomness), [Random Number generators](https://en.wikipedia.org/wiki/Random_number_generation)
 
-
-## Path, lines, shapes, curves.
-
-Description: How to create shapes and lines connecting points.
-
-Application: `shapes-Blob`
-
-Notes for the teacher:
-Exercises "Curves" pag. 93 of "Code as Creative Medium".
-
-
-
-### Exercises
-- Create your own shapes changing the algorithm that we have used to draw the circles
-- Move from polar coordinates to cartesian coordinates and viceversa. Have a look to the previous exercise about the unit circle.
-
-Keywords: `ofPath`, shapes.
-
 ## Containers
 
 Vectors
@@ -152,6 +134,32 @@ Notes for the teacher:
 
 [std::vectors](https://openframeworks.cc/ofBook/chapters/stl_vector.html) documentation
 
+## Path, lines, shapes, curves.
+
+Description: How to create shapes and lines connecting points.
+
+Application: `shapes-Blob`
+
+Notes for the teacher:
+Exercises "Curves" pag. 93 of "Code as Creative Medium".
+
+## Vectors
+
+Description: move things around using vectors.
+Topics: Acceleration, mass, multiple forces interaction.
+
+Keywords: `glm::vec2`
+
+Reference: [Nature of Code](https://natureofcode.com/book/chapter-1-vectors/). It is in processing but the concepts are valid in OF as well.
+
+
+### Exercises
+- Create your own shapes changing the algorithm that we have used to draw the circles
+- Move from polar coordinates to cartesian coordinates and viceversa. Have a look to the previous exercise about the unit circle.
+
+Keywords: `ofPath`, shapes.
+
+
 ## Images
 
 Description: How to manipulate pixels one by one and save the result in an image.
@@ -160,14 +168,6 @@ Keywords: `ofImage`, `ofPixels`, `getColor`, `setColor`
 
 Notes for the teacher:
 - Exercises "Image" at pag. 101 of "Code as Creative Medium".
-
-## Vectors
-
-Description: move things around using vectors.
-
-Keywords: `glm::vec2`
-
-Reference: [Nature of Code](https://natureofcode.com/book/chapter-1-vectors/). It is in processing but the concepts are valid in OF as well.
 
 ## Typography
 
@@ -209,8 +209,6 @@ Keywords: `ofSerial`
 Description: Make music letting your OF application talk to Sonic PI.
 
 Keywords: `OSC`
-
-
 
 
 

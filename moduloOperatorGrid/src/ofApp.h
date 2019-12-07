@@ -9,8 +9,4 @@ class ofApp : public ofBaseApp{
 		void update();
 		void draw();
 
-
-    float angle = 0;
-    float radius = 30;    
-		
 };
