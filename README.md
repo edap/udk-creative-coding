@@ -110,7 +110,7 @@ Applications `noiseExample`, `randomExample`
 
 References: [A Million Random Digits](https://en.wikipedia.org/wiki/A_Million_Random_Digits_with_100,000_Normal_Deviates), [History of randomness](https://en.wikipedia.org/wiki/History_of_randomness), [Random Number generators](https://en.wikipedia.org/wiki/Random_number_generation)
 
-## Containers
+## Containers and the glm::vec2 datatype
 
 Vectors
 
@@ -121,7 +121,9 @@ clear()
 front()
 back()
 
-See app: `containers_polyline`
+intro to point as datatype (`glm::vec2`). How to iterate through points
+
+See app: `introToContainer`, `containers_polyline`
 
 ### Exercise(s)
 
