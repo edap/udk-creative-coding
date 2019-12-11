@@ -123,9 +123,12 @@ back()
 
 intro to point as datatype (`glm::vec2`). How to iterate through points
 
-See app: `introToContainer`, `containers_polyline`
+See app: `introToContainer`, `containers_polyline`.
+
 
 ### Exercise(s)
+
+- Read [Intro to Lines](https://openframeworks.cc/ofBook/chapters/lines.html)
 
 - Read the two references regarding `std::maps` and `std::vectors`.
 

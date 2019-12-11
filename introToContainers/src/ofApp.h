@@ -17,6 +17,5 @@ class ofApp : public ofBaseApp{
     vector<glm::vec2> backpack;
     vector<ofColor> colors;
 
-    ofPolyline line;
 		
 };

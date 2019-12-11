@@ -6,7 +6,6 @@ void ofApp::setup(){
 }
 
 void ofApp::update(){
-    line.clear();
     // how to edit element in a container. The & symbol.
     // Also, how to iterate through a container using for(auto var: container)
     for(auto &point : backpack){
@@ -21,10 +20,7 @@ void ofApp::draw(){
     for(int i = 0; i < backpack.size(); i++) {
         ofSetColor(colors.at(i));
         ofDrawCircle(backpack.at(i), 10);
-        line.addVertex(backpack.at(i).x, backpack.at(i).y);
     }
-
-    line.draw();
 }
 
 void ofApp::keyPressed(int key){
