@@ -85,9 +85,9 @@ Notes for the teacher:
 
 Description:
 
-- Understandin sin of time, plotting the sin(time) on the x axis.
+- Understanding sin of time, plotting the sin(time) on the x axis.
 - Understanding the unit circle [gif](https://commons.wikimedia.org/wiki/File:Circle_cos_sin.gif).
-- How to represent a point in cartesia and polar space, how to convert from one space to the other
+- How to represent a point in cartesian and in polar space, how to convert from one space to the other.
 
 Keywords:
 
@@ -123,7 +123,7 @@ back()
 
 intro to point as datatype (`glm::vec2`). How to iterate through points
 
-See app: `introToContainer`, `containers_polyline`.
+See, in order these app: `introToContainer`, `containers_polyline`.
 
 
 ### Exercise(s)
@@ -148,15 +148,6 @@ Application: `shapes-Blob`
 Notes for the teacher:
 Exercises "Curves" pag. 93 of "Code as Creative Medium".
 
-## Vectors
-
-Description: move things around using vectors.
-Topics: Acceleration, mass, multiple forces interaction.
-
-Keywords: `glm::vec2`
-
-Reference: [Nature of Code](https://natureofcode.com/book/chapter-1-vectors/). It is in processing but the concepts are valid in OF as well.
-
 
 ### Exercises
 - Create your own shapes changing the algorithm that we have used to draw the circles
@@ -169,7 +160,9 @@ Keywords: `ofPath`, shapes.
 
 Description: How to manipulate pixels one by one and save the result in an image.
 
-Keywords: `ofImage`, `ofPixels`, `getColor`, `setColor`
+Keywords: `ofImage`, `ofPixels`, `getColor`, `setColor`, `setFromPixels`, `getPixels`, `getBrightness`
+
+Applications: `ImageLoadAndChange`, `ImageRandomPixel`
 
 Notes for the teacher:
 - Exercises "Image" at pag. 101 of "Code as Creative Medium".
@@ -184,6 +177,22 @@ See app `fonts`
 
 Notes for the teacher:
 - Exercises "Typography" at pag. 105 of "Code as Creative Medium".
+
+Applications: `FontBoundingBoxExample`, `fontWaves`, `fontAndPixels`. See also `fontShapesExample` in your local OF installation, inside `examples/graphics`
+
+Credits:
+
+The apps `FontBoundingBoxExample` and `fontWaves` come from the exercises about typography in the repository [RTP_SFPC_FALL19](https://github.com/ofZach/RTP_SFPC_FALL19) by Zach Lieberman.
+
+## Vectors and Forces
+
+Description: move things around using vectors.
+Topics: Acceleration, mass, multiple forces interaction.
+
+Keywords: `glm::vec2`
+
+Reference: [Nature of Code](https://natureofcode.com/book/chapter-1-vectors/). It is in processing but the concepts are valid in OF as well.
+
 
 ## ofNode
 
