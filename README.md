@@ -170,15 +170,14 @@ Notes for the teacher:
 ## Typography
 
 Bitmap
-Keywords: `ofDrawBitmapString()`, `ofDrawBitmapStringHighlight()`, `ofTrueTypeFont font;` , `font.load()`, `font.drawString()`
+Keywords: `ofDrawBitmapString()`, `ofDrawBitmapStringHighlight()`, `ofTrueTypeFont font;` , `font.load(name, size, true, true, true)`, `font.drawString()`, `font.getStringAsPoints()`
 
 
-See app `fonts`
 
 Notes for the teacher:
 - Exercises "Typography" at pag. 105 of "Code as Creative Medium".
 
-Applications: `FontBoundingBoxExample`, `fontWaves`, `fontAndPixels`. See also `fontShapesExample` in your local OF installation, inside `examples/graphics`
+Applications: `FontBoundingBoxExample`, `fontWaves`, `fontAndPixels`, `font3DExample`. See also `fontShapesExample` in your local OF installation, inside `examples/graphics`
 
 Credits:
 
@@ -299,7 +298,7 @@ logical operators
 !
 ```
 
-### Working with the console.
+### Working with the terminal.
 
 You do not require xcode or visual studio 2017 to run opeframeworks. A terminal and a text editor are enough. As a text editor I suggest [visual studio code](https://code.visualstudio.com/download).
 
