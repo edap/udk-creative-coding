@@ -1,4 +1,6 @@
 #include "ofApp.h"
+// credits:
+// https://github.com/ofZach/RTP_SFPC_FALL19/tree/master/typeExample3
 
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -44,7 +46,6 @@ void ofApp::draw(){
         paths.at(i).draw();
     }
     ofPopMatrix();
-
 
     ofDrawAxis(300);
     ofPopMatrix();
